@@ -1,0 +1,14 @@
+*.js
+!config/local.js
+!config/prod.js
+!public/inline.bundle.js
+!public/*
+coverage/
+node_modules/
+*.js.map
+*.d.ts
+!types.d.ts
+.nyc_output/
+
+yarn-error.log
+logs/

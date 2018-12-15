@@ -1,0 +1,50 @@
+{
+  "NAVBAR": {
+    "HOME": "ראשי",
+    "SCREENS": "מסכים",
+    "LIBRARY": "ספרייה",
+    "PLAYLISTS": "אוספים",
+    "SCHEDULES": "תזמון",
+    "SETTINGS": "הגדרות",
+    "IMAGES": "תמונות",
+    "VIDEOS": "סרטונים",
+    "SOUNDS": "צלילים",
+    "SLIDES": "שקפים"
+  },
+  "LOGIN": {
+    "TITLE": "כניסה",
+    "INSERT_USERNAME": "נא הכנס שם משתמש",
+    "PASSWORD": "סיסמה",
+    "USERNAME": "שם משתמש",
+    "INSERT_PASSWORD": "נא הכנס סיסמה",
+    "INVALID_USERNAME_OR_PASSWORD": "שם משתמש/סיסמה לא נכונים. אנא נסה שנית",
+    "REMEMBER_ME": "זכור אותי",
+    "LOGIN_BTN": "כניסה"
+  },
+  "SIGNUP": {
+    "TITLE": "הצטרפות",
+    "INSERT_USERNAME": "נא הכנס שם משתמש",
+    "PASSWORD": "סיסמה",
+    "USERNAME": "שם משתמש",
+    "INSERT_PASSWORD": "נא הכנס סיסמה",
+    "INVALID_USERNAME_OR_PASSWORD": "שם משתמש/סיסמה לא נכונים. אנא נסה שנית",
+    "REMEMBER_ME": "זכור אותי",
+    "SIGNUP_BTN": "רישום"
+  },
+  "SCREENS": {
+    "NAME": "שם למסך",
+    "NAME_HELP": "כדאי לבחור שם בעל משמעות.",
+    "TOKEN": "קוד זיהוי",
+    "TYPE": "סוג",
+    "STATUS": "מצב",
+    "LAST_DATE": "תאריך שימוש אחרון",
+    "CREATE": "הוספה",
+    "UPDATE": "עידכון"
+  },
+  "DASHBOARD": {
+    "FOOTER": "כל הזכויות שמורות 2018 ©"
+  },
+  "xxxxx": {
+    "xxxx": "xxxx"
+  }
+}

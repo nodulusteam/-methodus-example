@@ -1,0 +1,46 @@
+{
+    "signnature": {
+        "contractNameServer": "@example/server",
+        "contractNameClient": "@example/client",
+        "buildPath": "../",
+        "path": "./",
+        "contracts": {
+            "DataController": {
+                "path": "./controllers/datacontroller.ts"
+            },
+            "AuthController": {
+                "path": "./controllers/auth.controller.ts"
+            },
+            "LibraryDataController": {
+                "path": "./controllers/library.data.controller.ts"
+            },
+            "UserController": {
+                "path": "./controllers/user.data.controller.ts"
+            }
+        },
+        "models": {
+            "UserModel": {
+                "path": "./models/user.model.ts"
+            },
+            "ScreenModel": {
+                "path": "./models/screen.model.ts"
+            },
+            "LibraryModel": {
+                "path": "./models/library.model.ts"
+            },
+            "PlaylistModel": {
+                "path": "./models/playlist.model.ts"
+            },
+            "SlideModel": {
+                "path": "./models/slide.model.ts"
+            }
+        },
+        "includes": {
+            "UserMock": {
+                "path": "./mocks/user.mock.ts"
+            }
+        },
+        "dependencies": {},
+        "bindings": {}
+    }
+}

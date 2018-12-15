@@ -1,0 +1,139 @@
+<div>
+<app-language-bar></app-language-bar>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-55">
+						{{"SIGNUP.TITLE" | translate}}
+					</span>
+
+					<div class="wrap-input100 validate-input m-b-16" [attr.data-validate]="'SIGNUP.INSERT_USERNAME' | translate">
+						<input class="input100" type="text" name="userName" placeholder="Email" [(ngModel)]="userName">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-envelope"></span>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" >
+						<input class="input100" type="password" name="password" placeholder="Password" [(ngModel)]="password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-lock"></span>
+						</span>
+					</div>
+
+
+	                <div class="wrap-input100 validate-input m-b-16" >
+						<input class="input100" type="password" name="passwordRepeat" placeholder="Repeat password" [(ngModel)]="passwordRepeat">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-lock"></span>
+						</span>
+					</div>
+
+				 
+					
+					<div class="container-login100-form-btn p-t-25">
+						<button class="login100-form-btn" (click)="trySignup()">
+								{{"SIGNUP.SIGNUP_BTN" | translate}}
+						</button>
+					</div>
+ 
+
+				<div class="text-center w-full p-t-25">
+						<span class="txt1">
+							Already a member?
+						</span>
+
+						<a class="txt1 bo1 hov1" href="#"  routerLink="/signin">
+							Sign in now							
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+<!-- Simple pop-up dialog box containing a form -->
+<dialog id="favDialog">
+  <form method="dialog">
+    <p><label>Favorite animal:
+      <select>
+        <option></option>
+        <option>Brine shrimp</option>
+        <option>Red panda</option>
+        <option>Spider monkey</option>
+      </select>
+    </label></p>
+    <menu>
+      <button>Cancel</button>
+      <button>Confirm</button>
+    </menu>
+  </form>
+</dialog>
+
+<menu>
+  <button id="updateDetails">Update details</button>
+</menu>
+
+<div id="output"></div>
+
+<script>
+(function() {
+  var updateButton = document.getElementById('updateDetails');
+  var favDialog = document.getElementById('favDialog');
+  var outputBox = document.getElementById("output");
+
+  // “Update details” button opens the <dialog> modally
+  updateButton.addEventListener('click', function() {
+    favDialog.showModal();
+    output.innerHTML += "<div>" + favDialog.returnValue + " button clicked!</div>";
+  });
+})();
+</script>
+ 
+
+    <ng-template #share>
+        <div class="modal-body text-center">
+
+            <p>Share your group.</p>
+            <pre>{{group.GroupId}}</pre>
+            <a type="button" class="btn btn-primary" (click)="decline()">Cancel</a>
+        </div>
+    </ng-template>
+
+    <ng-template #join>
+        <div class="modal-body text-center">
+            <p>Join a group.</p>
+            <div>
+                <label>Group code</label>
+                <input type="text" class="form-control" #group_code />
+            </div>
+            <a type="button" class="btn btn-primary" (click)="JoinConfirm(group_code.value)">Join</a>
+            <a type="button" class="btn btn-default" (click)="decline()">Cancel</a>
+        </div>
+    </ng-template>
+
+    <div class="float-left dropdown" *ngIf="userData && group">
+        <a class="btn btn-secondary dropdown-toggle white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            {{group.Name}}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="position: absolute">
+            <a class="dropdown-item" (click)="setGroup(item)" *ngFor="let item of userData.groups">{{item.Name}}</a>
+
+            <a class="dropdown-item" (click)="JoinGroup(join)">Join group</a>
+            <a class="dropdown-item" (click)="ShareGroup(share)">Share group</a>
+        </div>
+
+    </div>
+</div>

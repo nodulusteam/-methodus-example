@@ -1,0 +1,52 @@
+{
+  "NAVBAR": {
+    "HOME": "Home",
+    "SCREENS": "Screens",
+    "LIBRARY": "Library",
+    "PLAYLISTS": "Playlists",
+    "SCHEDULES": "Schedules",
+    "SETTINGS": "Settings",
+    "IMAGES": "Images",
+    "VIDEOS": "Videos",
+    "SOUNDS": "Sounds",
+    "SLIDES": "Slides"
+  },
+  "LOGIN": {
+    "TITLE": "Login",
+    "INSERT_USERNAME": "Please enter a username",
+    "PASSWORD": "Password",
+    "USERNAME": "Username",
+    "INSERT_PASSWORD": "Please enter a password",
+    "INVALID_USERNAME_OR_PASSWORD": "Username or password not found",
+    "REMEMBER_ME": "Remember me",
+    "LOGIN_BTN": "Login"
+  },
+  "SIGNUP": {
+    "TITLE": "Signup",
+    "INSERT_USERNAME": "Please enter a username",
+    "PASSWORD": "Password",
+    "USERNAME": "Username",
+    "INSERT_PASSWORD": "Please enter a password",
+    "SIGNUP_BTN": "Signup"
+  },
+  "SCREENS": {
+    "NAME": "Name your screen",
+    "NAME_HELP": "Try using a meaningful name",
+    "TOKEN": "Token",
+    "TYPE": "Type",
+    "STATUS": "Status",
+    "LAST_DATE": "Last active date",
+    "CREATE": "Create",
+    "UPDATE": "Update"
+  },
+  "DASHBOARD": {
+    "FOOTER": "All rights reserved ©"
+  },
+  "LIBRARY":{
+    "NAME":"Name",
+    "RESOURCE": "Resource",
+    "RESOURCE_DESCRIPTION": "Images (jpg,gif) videos (mp4) audio (mp3)",
+    "CREATE": "Create",
+    "UPDATE": "Update"
+  }
+}

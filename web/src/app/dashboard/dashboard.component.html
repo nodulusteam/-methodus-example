@@ -1,0 +1,98 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" [class]="activeClass">
+        <div class="sidebar-header">
+            <h3>LIBRARY</h3>
+            <strong>BS</strong>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-home"></i>
+                    {{"NAVBAR.HOME" | translate}}
+                </a>             
+            </li>
+              
+             <li>
+                <a href="#LibrarySubmenu" (click)="toggleSubmenu()"    routerLink="library" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-copy"></i>
+                      {{"NAVBAR.LIBRARY" | translate}}
+                     
+                </a>
+                <ul class="{{subMenuState}} list-unstyled" id="LibrarySubmenu">
+                    <li>
+                        <a    routerLink="library/images">  {{"NAVBAR.IMAGES" | translate}}</a>
+                    </li>
+                    <li>
+                        <a   routerLink="library/videos">  {{"NAVBAR.VIDEOS" | translate}}</a>
+                    </li>
+                    <li>
+                        <a routerLink="library/sounds">  {{"NAVBAR.SOUNDS" | translate}}</a>
+                    </li>
+                     <li>
+                        <a routerLink="library/slides">  {{"NAVBAR.SLIDES" | translate}}</a>
+                    </li>
+                </ul>
+
+            </li>
+              <li>
+                <a routerLink="playlists">
+                    <i class="fas fa-step-forward"></i>
+                      {{"NAVBAR.PLAYLISTS" | translate}}
+                     
+                </a></li>
+
+                
+                
+
+                  <li>
+                <a routerLink="settings">
+                    <i class="fas fa-cogs"></i>
+                      {{"NAVBAR.SETTINGS" | translate}}
+                  
+                </a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+ 
+    <nav class="navbar-fixed-top dashboard-nav">
+        <div class="container no-margin">
+            <ul class="mr-auto">
+                <li class="nav-item"><button type="button" (click)="toggleSidebar()" id="sidebarCollapse" class="btn btn-sm btn-info">
+                    <i class="fas fa-align-left"></i>                  
+                </button></li>
+             
+                <li class="nav-item">
+                 <app-language-bar></app-language-bar>
+                 </li>
+            </ul>
+        </div>
+    </nav>
+
+
+  
+ 
+
+ 
+
+<div id="scroller">
+
+        
+         <router-outlet></router-outlet>
+         </div>
+    </div>
+     <footer class="footer closed">
+     {{'DASHBOARD.FOOTER' | translate}}
+     </footer>
+</div>
+
+
+
+
+ 

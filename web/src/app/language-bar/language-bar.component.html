@@ -1,0 +1,5 @@
+<link rel="stylesheet" [href]='sanitizer.bypassSecurityTrustResourceUrl(this.languageService.cssUrl)' />
+
+<select [(ngModel)]="selectedLanguage" (change)="selectLanguage()">
+  <option *ngFor="let c of languages" [ngValue]="c">{{c.name}}</option>
+</select>
